@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DiyetisyenVeriTabaniModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminTbl">
+    <Key>
+      <PropertyRef Name="AdminId" />
+    </Key>
+    <Property Name="AdminId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminKullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AdminSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DiyetisyenTbl">
+    <Key>
+      <PropertyRef Name="DiyetisyenId" />
+    </Key>
+    <Property Name="DiyetisyenId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiyetisyenAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DiyetisyenSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DiyetisyenTc" Type="nchar" MaxLength="11" Nullable="false" />
+    <Property Name="DiyetisyenKullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DiyetisyenSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DiyetListesiTbl">
+    <Key>
+      <PropertyRef Name="DiyetId" />
+    </Key>
+    <Property Name="DiyetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiyetAdi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Pazartesi_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Pazartesi_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Pazartesi_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Salı_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Salı_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Salı_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Carsamba_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Carsamba_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Carsamba_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Persembe_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Persembe_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Persembe_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Cuma_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Cuma_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Cuma_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Cumartesi_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Cumartesi_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Cumartesi_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Pazar_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Pazar_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Pazar_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HastaTbl">
+    <Key>
+      <PropertyRef Name="HastaId" />
+    </Key>
+    <Property Name="HastaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HastaAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HastaSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HastaTc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Hastalik" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HastaninDiyetisyeni" Type="int" Nullable="false" />
+    <Property Name="DiyetYontemId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_HastaTbl_DiyetisyenTbl">
+    <End Role="DiyetisyenTbl" Type="Self.DiyetisyenTbl" Multiplicity="1" />
+    <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiyetisyenTbl">
+        <PropertyRef Name="DiyetisyenId" />
+      </Principal>
+      <Dependent Role="HastaTbl">
+        <PropertyRef Name="HastaninDiyetisyeni" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HastaTbl_DiyetListesiTbl">
+    <End Role="DiyetListesiTbl" Type="Self.DiyetListesiTbl" Multiplicity="1" />
+    <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiyetListesiTbl">
+        <PropertyRef Name="DiyetId" />
+      </Principal>
+      <Dependent Role="HastaTbl">
+        <PropertyRef Name="DiyetYontemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DiyetisyenVeriTabaniModelStoreContainer">
+    <EntitySet Name="AdminTbl" EntityType="Self.AdminTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DiyetisyenTbl" EntityType="Self.DiyetisyenTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DiyetListesiTbl" EntityType="Self.DiyetListesiTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HastaTbl" EntityType="Self.HastaTbl" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_HastaTbl_DiyetisyenTbl" Association="Self.FK_HastaTbl_DiyetisyenTbl">
+      <End Role="DiyetisyenTbl" EntitySet="DiyetisyenTbl" />
+      <End Role="HastaTbl" EntitySet="HastaTbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HastaTbl_DiyetListesiTbl" Association="Self.FK_HastaTbl_DiyetListesiTbl">
+      <End Role="DiyetListesiTbl" EntitySet="DiyetListesiTbl" />
+      <End Role="HastaTbl" EntitySet="HastaTbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

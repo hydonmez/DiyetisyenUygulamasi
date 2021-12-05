@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DiyetisyenVeriTabaniModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminTbl">
+    <Key>
+      <PropertyRef Name="AdminId" />
+    </Key>
+    <Property Name="AdminId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdminKullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AdminSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DiyetisyenTbl">
+    <Key>
+      <PropertyRef Name="DiyetisyenId" />
+    </Key>
+    <Property Name="DiyetisyenId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DiyetisyenAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiyetisyenSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiyetisyenTc" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="DiyetisyenKullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiyetisyenSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="HastaTbl" Relationship="Self.FK_HastaTbl_DiyetisyenTbl" FromRole="DiyetisyenTbl" ToRole="HastaTbl" />
+  </EntityType>
+  <EntityType Name="DiyetListesiTbl">
+    <Key>
+      <PropertyRef Name="DiyetId" />
+    </Key>
+    <Property Name="DiyetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DiyetAdi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pazartesi_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pazartesi_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pazartesi_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salı_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salı_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salı_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Carsamba_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Carsamba_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Carsamba_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Persembe_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Persembe_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Persembe_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cuma_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cuma_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cuma_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cumartesi_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cumartesi_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cumartesi_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pazar_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pazar_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pazar_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="HastaTbl" Relationship="Self.FK_HastaTbl_DiyetListesiTbl" FromRole="DiyetListesiTbl" ToRole="HastaTbl" />
+  </EntityType>
+  <EntityType Name="HastaTbl">
+    <Key>
+      <PropertyRef Name="HastaId" />
+    </Key>
+    <Property Name="HastaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HastaAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HastaSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HastaTc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Hastalik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HastaninDiyetisyeni" Type="Int32" Nullable="false" />
+    <Property Name="DiyetYontemId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DiyetisyenTbl" Relationship="Self.FK_HastaTbl_DiyetisyenTbl" FromRole="HastaTbl" ToRole="DiyetisyenTbl" />
+    <NavigationProperty Name="DiyetListesiTbl" Relationship="Self.FK_HastaTbl_DiyetListesiTbl" FromRole="HastaTbl" ToRole="DiyetListesiTbl" />
+  </EntityType>
+  <Association Name="FK_HastaTbl_DiyetisyenTbl">
+    <End Role="DiyetisyenTbl" Type="Self.DiyetisyenTbl" Multiplicity="1" />
+    <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiyetisyenTbl">
+        <PropertyRef Name="DiyetisyenId" />
+      </Principal>
+      <Dependent Role="HastaTbl">
+        <PropertyRef Name="HastaninDiyetisyeni" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HastaTbl_DiyetListesiTbl">
+    <End Role="DiyetListesiTbl" Type="Self.DiyetListesiTbl" Multiplicity="1" />
+    <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiyetListesiTbl">
+        <PropertyRef Name="DiyetId" />
+      </Principal>
+      <Dependent Role="HastaTbl">
+        <PropertyRef Name="DiyetYontemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DiyetisyenVeriTabaniEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminTbl" EntityType="Self.AdminTbl" />
+    <EntitySet Name="DiyetisyenTbl" EntityType="Self.DiyetisyenTbl" />
+    <EntitySet Name="DiyetListesiTbl" EntityType="Self.DiyetListesiTbl" />
+    <EntitySet Name="HastaTbl" EntityType="Self.HastaTbl" />
+    <AssociationSet Name="FK_HastaTbl_DiyetisyenTbl" Association="Self.FK_HastaTbl_DiyetisyenTbl">
+      <End Role="DiyetisyenTbl" EntitySet="DiyetisyenTbl" />
+      <End Role="HastaTbl" EntitySet="HastaTbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HastaTbl_DiyetListesiTbl" Association="Self.FK_HastaTbl_DiyetListesiTbl">
+      <End Role="DiyetListesiTbl" EntitySet="DiyetListesiTbl" />
+      <End Role="HastaTbl" EntitySet="HastaTbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

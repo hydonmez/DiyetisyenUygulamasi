@@ -1,0 +1,145 @@
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\bin\Debug\DiyetisyenUygulama.exe.config
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\bin\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\bin\Debug\DiyetisyenUygulama.pdb
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.GirisFormu.resources
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.Properties.Resources.resources
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.pdb
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.DiyetisyenKayitFormu.resources
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.HastaKayitFormu.resources
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.csproj.CopyComplete
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.DiyetisyenIslemleriMenuForm.resources
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\bin\Debug\System.ValueTuple.dll
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\bin\Debug\System.ValueTuple.xml
+C:\Users\ASUS\source\repos\DiyetisyenUygulama\obj\Debug\DiyetisyenUygulama.RaporFormu.resources
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.csprojAssemblyReference.cache
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.DiyetisyenIslemleriMenuForm.resources
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.DiyetisyenKayitFormu.resources
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.GirisFormu.resources
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.HastaKayitFormu.resources
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.Properties.Resources.resources
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.RaporFormu.resources
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.csproj.GenerateResource.cache
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.csproj.CoreCompileInputs.cache
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.exe
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.pdb
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\DiyetisyenUygulama.exe.config
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\DiyetisyenUygulama.exe
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\DiyetisyenUygulama.pdb
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\EntityFramework.dll
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\System.ValueTuple.dll
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\EntityFramework.xml
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\System.ValueTuple.xml
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\obj\Debug\DiyetisyenUygulama.csproj.CopyComplete
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hydon\Desktop\25-05- 19.38\25-05- 19.38\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe.config
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.pdb
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\System.ValueTuple.xml
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenIslemleriMenuForm.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenKayitFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.GirisFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.HastaKayitFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.RaporFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\Desktop\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.pdb
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe.config
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.pdb
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\System.ValueTuple.xml
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenIslemleriMenuForm.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenKayitFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.GirisFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.HastaKayitFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.RaporFormu.resources
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\Desktop\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.pdb
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe.config
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.pdb
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\EntityFramework.dll
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\System.ValueTuple.dll
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\EntityFramework.xml
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\System.ValueTuple.xml
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csprojAssemblyReference.cache
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenIslemleriMenuForm.resources
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenKayitFormu.resources
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.GirisFormu.resources
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.HastaKayitFormu.resources
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.Properties.Resources.resources
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.RaporFormu.resources
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.GenerateResource.cache
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CoreCompileInputs.cache
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CopyComplete
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.exe
+C:\Users\hydon\Desktop\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.pdb
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe.config
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.pdb
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\EntityFramework.dll
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\System.ValueTuple.dll
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\EntityFramework.xml
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\bin\Debug\System.ValueTuple.xml
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csprojAssemblyReference.cache
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenIslemleriMenuForm.resources
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenKayitFormu.resources
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.GirisFormu.resources
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.HastaKayitFormu.resources
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.Properties.Resources.resources
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.RaporFormu.resources
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.GenerateResource.cache
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CoreCompileInputs.cache
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CopyComplete
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.exe
+C:\Users\hydon\Desktop\Üniversite dersler\Tasarım mimarisi\Diyet Uygulaması teslim aşaması-01.06.2021\Diyet Uygulaması-01.06.2021\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.pdb
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe.config
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\DiyetisyenUygulama.pdb
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\System.ValueTuple.dll
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\bin\Debug\System.ValueTuple.xml
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csprojAssemblyReference.cache
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenIslemleriMenuForm.resources
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.DiyetisyenKayitFormu.resources
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.GirisFormu.resources
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.HastaKayitFormu.resources
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.Properties.Resources.resources
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.RaporFormu.resources
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.GenerateResource.cache
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.csproj.CopyComplete
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.exe
+C:\Users\ASUS\Downloads\Diyet Uygulaması\Diyet Uygulaması\obj\Debug\DiyetisyenUygulama.pdb

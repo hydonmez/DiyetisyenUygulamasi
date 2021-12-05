@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9318f46e69d644fd9d95089f843982c8" Name="Diagram1">
+        <EntityTypeShape EntityType="DiyetisyenVeriTabaniModel.AdminTbl" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiyetisyenVeriTabaniModel.DiyetisyenTbl" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiyetisyenVeriTabaniModel.DiyetListesiTbl" Width="1.5" PointX="4.125" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiyetisyenVeriTabaniModel.HastaTbl" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DiyetisyenVeriTabaniModel.FK_HastaTbl_DiyetisyenTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="DiyetisyenVeriTabaniModel.FK_HastaTbl_DiyetListesiTbl" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

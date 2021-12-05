@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DiyetisyenVeriTabaniModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AdminTbl">
+          <Key>
+            <PropertyRef Name="AdminId" />
+          </Key>
+          <Property Name="AdminId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdminKullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AdminSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DiyetisyenTbl">
+          <Key>
+            <PropertyRef Name="DiyetisyenId" />
+          </Key>
+          <Property Name="DiyetisyenId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DiyetisyenAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DiyetisyenSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DiyetisyenTc" Type="nchar" MaxLength="11" Nullable="false" />
+          <Property Name="DiyetisyenKullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DiyetisyenSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DiyetListesiTbl">
+          <Key>
+            <PropertyRef Name="DiyetId" />
+          </Key>
+          <Property Name="DiyetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DiyetAdi" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Pazartesi_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Pazartesi_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Pazartesi_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Salı_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Salı_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Salı_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Carsamba_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Carsamba_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Carsamba_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Persembe_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Persembe_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Persembe_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Cuma_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Cuma_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Cuma_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Cumartesi_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Cumartesi_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Cumartesi_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Pazar_Sabah" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Pazar_Oglen" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Pazar_Aksam" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HastaTbl">
+          <Key>
+            <PropertyRef Name="HastaId" />
+          </Key>
+          <Property Name="HastaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HastaAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HastaSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HastaTc" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Hastalik" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HastaninDiyetisyeni" Type="int" Nullable="false" />
+          <Property Name="DiyetYontemId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_HastaTbl_DiyetisyenTbl">
+          <End Role="DiyetisyenTbl" Type="Self.DiyetisyenTbl" Multiplicity="1" />
+          <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DiyetisyenTbl">
+              <PropertyRef Name="DiyetisyenId" />
+            </Principal>
+            <Dependent Role="HastaTbl">
+              <PropertyRef Name="HastaninDiyetisyeni" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HastaTbl_DiyetListesiTbl">
+          <End Role="DiyetListesiTbl" Type="Self.DiyetListesiTbl" Multiplicity="1" />
+          <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DiyetListesiTbl">
+              <PropertyRef Name="DiyetId" />
+            </Principal>
+            <Dependent Role="HastaTbl">
+              <PropertyRef Name="DiyetYontemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DiyetisyenVeriTabaniModelStoreContainer">
+          <EntitySet Name="AdminTbl" EntityType="Self.AdminTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DiyetisyenTbl" EntityType="Self.DiyetisyenTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DiyetListesiTbl" EntityType="Self.DiyetListesiTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HastaTbl" EntityType="Self.HastaTbl" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_HastaTbl_DiyetisyenTbl" Association="Self.FK_HastaTbl_DiyetisyenTbl">
+            <End Role="DiyetisyenTbl" EntitySet="DiyetisyenTbl" />
+            <End Role="HastaTbl" EntitySet="HastaTbl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HastaTbl_DiyetListesiTbl" Association="Self.FK_HastaTbl_DiyetListesiTbl">
+            <End Role="DiyetListesiTbl" EntitySet="DiyetListesiTbl" />
+            <End Role="HastaTbl" EntitySet="HastaTbl" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DiyetisyenVeriTabaniModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdminTbl">
+          <Key>
+            <PropertyRef Name="AdminId" />
+          </Key>
+          <Property Name="AdminId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdminKullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AdminSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DiyetisyenTbl">
+          <Key>
+            <PropertyRef Name="DiyetisyenId" />
+          </Key>
+          <Property Name="DiyetisyenId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DiyetisyenAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DiyetisyenSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DiyetisyenTc" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="DiyetisyenKullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DiyetisyenSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="HastaTbl" Relationship="Self.FK_HastaTbl_DiyetisyenTbl" FromRole="DiyetisyenTbl" ToRole="HastaTbl" />
+        </EntityType>
+        <EntityType Name="DiyetListesiTbl">
+          <Key>
+            <PropertyRef Name="DiyetId" />
+          </Key>
+          <Property Name="DiyetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DiyetAdi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pazartesi_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pazartesi_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pazartesi_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Salı_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Salı_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Salı_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Carsamba_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Carsamba_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Carsamba_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Persembe_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Persembe_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Persembe_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Cuma_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Cuma_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Cuma_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Cumartesi_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Cumartesi_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Cumartesi_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pazar_Sabah" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pazar_Oglen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pazar_Aksam" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="HastaTbl" Relationship="Self.FK_HastaTbl_DiyetListesiTbl" FromRole="DiyetListesiTbl" ToRole="HastaTbl" />
+        </EntityType>
+        <EntityType Name="HastaTbl">
+          <Key>
+            <PropertyRef Name="HastaId" />
+          </Key>
+          <Property Name="HastaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HastaAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HastaSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HastaTc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Hastalik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HastaninDiyetisyeni" Type="Int32" Nullable="false" />
+          <Property Name="DiyetYontemId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DiyetisyenTbl" Relationship="Self.FK_HastaTbl_DiyetisyenTbl" FromRole="HastaTbl" ToRole="DiyetisyenTbl" />
+          <NavigationProperty Name="DiyetListesiTbl" Relationship="Self.FK_HastaTbl_DiyetListesiTbl" FromRole="HastaTbl" ToRole="DiyetListesiTbl" />
+        </EntityType>
+        <Association Name="FK_HastaTbl_DiyetisyenTbl">
+          <End Role="DiyetisyenTbl" Type="Self.DiyetisyenTbl" Multiplicity="1" />
+          <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DiyetisyenTbl">
+              <PropertyRef Name="DiyetisyenId" />
+            </Principal>
+            <Dependent Role="HastaTbl">
+              <PropertyRef Name="HastaninDiyetisyeni" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HastaTbl_DiyetListesiTbl">
+          <End Role="DiyetListesiTbl" Type="Self.DiyetListesiTbl" Multiplicity="1" />
+          <End Role="HastaTbl" Type="Self.HastaTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DiyetListesiTbl">
+              <PropertyRef Name="DiyetId" />
+            </Principal>
+            <Dependent Role="HastaTbl">
+              <PropertyRef Name="DiyetYontemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DiyetisyenVeriTabaniEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdminTbl" EntityType="Self.AdminTbl" />
+          <EntitySet Name="DiyetisyenTbl" EntityType="Self.DiyetisyenTbl" />
+          <EntitySet Name="DiyetListesiTbl" EntityType="Self.DiyetListesiTbl" />
+          <EntitySet Name="HastaTbl" EntityType="Self.HastaTbl" />
+          <AssociationSet Name="FK_HastaTbl_DiyetisyenTbl" Association="Self.FK_HastaTbl_DiyetisyenTbl">
+            <End Role="DiyetisyenTbl" EntitySet="DiyetisyenTbl" />
+            <End Role="HastaTbl" EntitySet="HastaTbl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HastaTbl_DiyetListesiTbl" Association="Self.FK_HastaTbl_DiyetListesiTbl">
+            <End Role="DiyetListesiTbl" EntitySet="DiyetListesiTbl" />
+            <End Role="HastaTbl" EntitySet="HastaTbl" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DiyetisyenVeriTabaniModelStoreContainer" CdmEntityContainer="DiyetisyenVeriTabaniEntities">
+          <EntitySetMapping Name="AdminTbl">
+            <EntityTypeMapping TypeName="DiyetisyenVeriTabaniModel.AdminTbl">
+              <MappingFragment StoreEntitySet="AdminTbl">
+                <ScalarProperty Name="AdminId" ColumnName="AdminId" />
+                <ScalarProperty Name="AdminKullaniciAdi" ColumnName="AdminKullaniciAdi" />
+                <ScalarProperty Name="AdminSifre" ColumnName="AdminSifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DiyetisyenTbl">
+            <EntityTypeMapping TypeName="DiyetisyenVeriTabaniModel.DiyetisyenTbl">
+              <MappingFragment StoreEntitySet="DiyetisyenTbl">
+                <ScalarProperty Name="DiyetisyenId" ColumnName="DiyetisyenId" />
+                <ScalarProperty Name="DiyetisyenAd" ColumnName="DiyetisyenAd" />
+                <ScalarProperty Name="DiyetisyenSoyad" ColumnName="DiyetisyenSoyad" />
+                <ScalarProperty Name="DiyetisyenTc" ColumnName="DiyetisyenTc" />
+                <ScalarProperty Name="DiyetisyenKullaniciAdi" ColumnName="DiyetisyenKullaniciAdi" />
+                <ScalarProperty Name="DiyetisyenSifre" ColumnName="DiyetisyenSifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DiyetListesiTbl">
+            <EntityTypeMapping TypeName="DiyetisyenVeriTabaniModel.DiyetListesiTbl">
+              <MappingFragment StoreEntitySet="DiyetListesiTbl">
+                <ScalarProperty Name="DiyetId" ColumnName="DiyetId" />
+                <ScalarProperty Name="DiyetAdi" ColumnName="DiyetAdi" />
+                <ScalarProperty Name="Pazartesi_Sabah" ColumnName="Pazartesi_Sabah" />
+                <ScalarProperty Name="Pazartesi_Oglen" ColumnName="Pazartesi_Oglen" />
+                <ScalarProperty Name="Pazartesi_Aksam" ColumnName="Pazartesi_Aksam" />
+                <ScalarProperty Name="Salı_Sabah" ColumnName="Salı_Sabah" />
+                <ScalarProperty Name="Salı_Oglen" ColumnName="Salı_Oglen" />
+                <ScalarProperty Name="Salı_Aksam" ColumnName="Salı_Aksam" />
+                <ScalarProperty Name="Carsamba_Sabah" ColumnName="Carsamba_Sabah" />
+                <ScalarProperty Name="Carsamba_Oglen" ColumnName="Carsamba_Oglen" />
+                <ScalarProperty Name="Carsamba_Aksam" ColumnName="Carsamba_Aksam" />
+                <ScalarProperty Name="Persembe_Sabah" ColumnName="Persembe_Sabah" />
+                <ScalarProperty Name="Persembe_Oglen" ColumnName="Persembe_Oglen" />
+                <ScalarProperty Name="Persembe_Aksam" ColumnName="Persembe_Aksam" />
+                <ScalarProperty Name="Cuma_Sabah" ColumnName="Cuma_Sabah" />
+                <ScalarProperty Name="Cuma_Oglen" ColumnName="Cuma_Oglen" />
+                <ScalarProperty Name="Cuma_Aksam" ColumnName="Cuma_Aksam" />
+                <ScalarProperty Name="Cumartesi_Sabah" ColumnName="Cumartesi_Sabah" />
+                <ScalarProperty Name="Cumartesi_Oglen" ColumnName="Cumartesi_Oglen" />
+                <ScalarProperty Name="Cumartesi_Aksam" ColumnName="Cumartesi_Aksam" />
+                <ScalarProperty Name="Pazar_Sabah" ColumnName="Pazar_Sabah" />
+                <ScalarProperty Name="Pazar_Oglen" ColumnName="Pazar_Oglen" />
+                <ScalarProperty Name="Pazar_Aksam" ColumnName="Pazar_Aksam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HastaTbl">
+            <EntityTypeMapping TypeName="DiyetisyenVeriTabaniModel.HastaTbl">
+              <MappingFragment StoreEntitySet="HastaTbl">
+                <ScalarProperty Name="HastaId" ColumnName="HastaId" />
+                <ScalarProperty Name="HastaAd" ColumnName="HastaAd" />
+                <ScalarProperty Name="HastaSoyad" ColumnName="HastaSoyad" />
+                <ScalarProperty Name="HastaTc" ColumnName="HastaTc" />
+                <ScalarProperty Name="Hastalik" ColumnName="Hastalik" />
+                <ScalarProperty Name="HastaninDiyetisyeni" ColumnName="HastaninDiyetisyeni" />
+                <ScalarProperty Name="DiyetYontemId" ColumnName="DiyetYontemId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
